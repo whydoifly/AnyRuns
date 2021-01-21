@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/app.min.css" />
+        <link rel="stylesheet" href="styles.css">
+        <title>
+          AnyRuns - Your local on demand delivery service. Get 10% off when
+          delivering items locally.
+        </title>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="./fav/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./fav/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="./fav/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./fav/site.webmanifest" />
+        <link rel="mask-icon" href="./fav/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
+      </head>
+<body>
+    <header class="container" id="header">
+        <a href="./" class="logo"
+          ><img src="./images/dest/logo.png" alt="logo"
+        /></a>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#how-works" class="internal-a">How it Works</a></li>
+          <li><a href="/couriers">Couriers</a></li>
+          <li><a href="#faq" class="internal-a">FAQ</a></li>
+          <li><a href="#contact-us" class="internal-a">Contact Us</a></li>
+          <li><a href="register.html" class="button mobile-register" id="register">Register</a></li>
+          <li><a href="login.html" class="button mobile-login" id="login">Login</a></li>
+        </ul>
+        <div class="account-buttons">
+          <a href="register.html" class="button" id="register">Register</a>
+          <a href="login.html" class="button" id="login">Login</a>
+        </div>
+        <!-- <a href="#" class="login">Login</a> -->
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
+    </header>
+    <!-- Registration Form -->
+    <div class="register-form-container">
+        <div  class="register-form">
+            <a href="index.html" class="back-btn button">Back</a>
+
+            <div class="progress-bar">
+                <div class="quote-progress">
+                  <div class="progress-1 progress-active">1</div>
+                </div>
+                <div class="hl"></div>
+                <div class="quote-progress">
+                  <div class="progress-2">2</div>
+                  <div class="progress-2-delivery"></div>
+                </div>
+                <div class="hl"></div>
+                <div class="quote-progress">
+                  <div class="progress-3">3</div>
+                </div>
+              </div>
+              <div class="progress-names-registration">
+                <div class="progress-name"><span class="make-it-bold">About You</span></div>
+                <div class="progress-name">Delivery Details</div>
+                <div class="progress-name payment-progress">Payment</div>
+              </div>
+            <div class="row-inputs">
+                <div class="row-input">
+                    <label for="first-name" class="first-name">First Name</label><br>
+                    <input type="text" class="first-name" placeholder="Name">
+                    <br>
+                </div>
+                <div class="row-input">
+                    <label for="last-name" class="last-name">Last Name</label><br>
+                    <input type="text" class="last-name" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="column-inputs">
+                <div class="column-input">
+                    <label for="contact-number">Contact Number</label><br>
+                    <input type="tel" class="contact-number" placeholder="Enter Mobile Number">
+                </div>
+                <div class="column-input">
+                    <label for="email">Email Address</label><br>
+                    <input type="email" class="email" placeholder="Enter Email Address">
+                </div>
+                <div class="column-input">
+                    <label for="email">Home Address</label><br>
+                    <input type="email" class="email" placeholder="Address">
+                </div>
+                <div class="column-input">
+                    <label for="email">Postcode</label><br>
+                    <input type="email" class="email" placeholder="Postcode">
+                </div>
+            </div>
+            <div class="row-inputs">
+                <div class="row-input">
+                    <label for="city">City</label><br>
+                    <input type="text" class="city" placeholder="City">
+                </div>
+                <div class="row-input">
+                    <label for="country">Country</label><br>
+                    <input type="text" class="country" placeholder="Country">
+                </div>
+            </div>
+            <div class="column-inputs">
+                <div class="column-input">
+                    <label for="reg-password">Create Password</label><br>
+                    <input type="password" class="reg-password" placeholder="Enter Password">
+                </div>
+                <div class="column-input">
+                    <label for="reg-password-confirm">Confirm Password</label><br>
+                    <input type="password" class="reg-password-confirm" placeholder="Confirm Password">
+                </div>
+            </div>
+            <button class="register-btn" type="button">Continue</button>
+        </div>
+    </div>
+    <footer>
+        <div class="small-container">
+          <div class="anyruns">
+            <a class="logo" href="#"
+              ><img src="./images/dest/logo.png" alt="logo"
+            /></a>
+            <p>
+              AnyRuns was created in 2020, with a vision to provide top-quality
+              instant local delivery and collection services.
+            </p>
+          </div>
+          <div class="explore explore-home">
+            <p class="explore">Explore</p>
+            <a href="index.html">Home</a>
+            <a href="#how-works">How it works?</a>
+            <a href="#contact-us">Help</a>
+          </div>
+          <div class="get-connected">
+            <p class="gconnect">Get Connected</p>
+            <div class="icons">
+              <a
+                href="https://www.instagram.com/anyruns_uk/"
+                target="_blank"
+                class="soc-icon"
+                ><img src="./images/dest/Icon awesome-instagram.svg" alt=""
+              /></a>
+  
+              <a
+                href="https://www.facebook.com/AnyRuns-108497024306219"
+                target="_blank"
+                class="soc-icon"
+                ><img src="./images/dest/Icon awesome-facebook-square.svg" alt=""
+              /></a>
+              <a
+                href="https://twitter.com/AnyRuns_UK"
+                target="_blank"
+                class="soc-icon"
+                ><img src="./images/dest/Icon awesome-twitter-square.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="small-container bottom">
+          <div class="uk">
+            <img src="./images/dest/uk.jpg" />
+            <p>United Kingdom</p>
+          </div>
+          <a href="/privacy-policy" class="green">Privacy Policy</a>
+          <p>Any Runs Limited © All Rights Reserved.</p>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+      <script src="./js/app.min.js"></script>
+  
+      <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA10L4AArCPR7oS9T1ycTJT9lrd1FVs56A&callback=initMap"
+        type="text/javascript"
+      ></script>
+</body>
+</html>

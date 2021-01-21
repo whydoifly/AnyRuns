@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <title>
+      AnyRuns - Your local on demand delivery service. Get 10% off when
+      delivering items locally.
+    </title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./fav/site.webmanifest" />
+    <link rel="mask-icon" href="./fav/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="player_1 d-none">
+      <div class="video-wrp">
+        <video id="player" playsinline controls>
+          <source src="./video/any.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+    <header class="container" id="header">
+      <a href="./" class="logo"
+        ><img src="./images/dest/logo.png" alt="logo"
+      /></a>
+      <ul class="menu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#how-works" class="internal-a">How it Works</a></li>
+        <li><a href="/couriers">Couriers</a></li>
+        <li><a href="#faq" class="internal-a">FAQ</a></li>
+        <li><a href="#contact-us" class="internal-a">Contact Us</a></li>
+        <li><a href="register.html" class="button mobile-register" id="register">Register</a></li>
+        <li><a href="login.html" class="button mobile-login" id="login">Login</a></li>
+      </ul>
+      <div class="account-buttons">
+        <a href="register.html" class="button" id="register">Register</a>
+        <a href="login.html" class="button" id="login">Login</a>
+      </div>
+      <!-- <a href="#" class="login">Login</a> -->
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
+    </header>
+    <main>
+      <section id="top">
+        <div class="container">
+          <div class="top-info">
+            <h1>Deliver and collect items with ease using AnyRuns!</h1>
+            <p class="main-sub-heading">
+              We provide a guaranteed hassle-free local delivery and collection
+              service.
+            </p>
+            <div class="booking-section">
+              <form>
+                  <div class="would-like-to">
+                      <label for="widget-inputs" class="delivery-headings">I would like to...</label>
+                      <select class="widget-inputs">
+                          <option>Send an item</option>
+                          <option>Send an item</option>
+                          <option>Send an item</option>
+                      </select>  
+                  </div>
+                  <div class="vl"></div>
+                  <div class="collection-address-section">
+                      <label for class="delivery-headings">Collection Address</label>
+                      <input type="text" class="widget-inputs" placeholder="Marylebone Lane, London">
+                  </div>
+                  <div class="vl"></div>
+                  <div class="delivery-address-section">
+                      <label for class="delivery-headings">Delivery Address</label>
+                      <input type="text" class="widget-inputs" placeholder="Tottenham Highroad, London">
+                  </div>
+                  <div class="vl"></div>
+                  <div class="transport-required-section">
+                      <h4 class="delivery-headings">Transport required</h4>
+                      <div class="transport-buttons">
+                          <div class="bicycle-icon btn icon-active">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32.637" height="24.563" viewBox="0 0 32.637 24.563">
+                            <path id="path-bicycle" d="M75.931,745.678a7.106,7.106,0,0,1,4.875-1.8,6.546,6.546,0,0,1,4.74,1.8,5.719,5.719,0,0,1,0,8.507,6.675,6.675,0,0,1-4.74,1.678,7.629,7.629,0,0,1-4.875-1.678,5.334,5.334,0,0,1-2.031-4.194A5.4,5.4,0,0,1,75.931,745.678Zm1.49,7.189a5.383,5.383,0,0,0,6.771,0,3.99,3.99,0,0,0,0-5.991,5.383,5.383,0,0,0-6.771,0,3.99,3.99,0,0,0,0,5.991Zm11.1-10.784,2.979,2.756v7.429H88.8v-5.991l-4.334-3.355a1.668,1.668,0,0,1-.813-1.677,3.512,3.512,0,0,1,.813-1.677l3.792-3.355c.271-.479.948-.719,1.9-.719a3.585,3.585,0,0,1,2.167.719l2.573,2.277a7.106,7.106,0,0,0,4.875,1.8v2.4a10.058,10.058,0,0,1-6.907-2.516l-1.083-.958Zm8.261-6.71a2.859,2.859,0,0,1-3.792,0,2.138,2.138,0,0,1,0-3.355,2.86,2.86,0,0,1,3.792,0,2.138,2.138,0,0,1,0,3.355Zm-1.9,10.3a6.772,6.772,0,0,1,4.74-1.8,7.106,7.106,0,0,1,4.875,1.8,5.567,5.567,0,0,1,2.031,4.313,5.168,5.168,0,0,1-2.031,4.194,7.727,7.727,0,0,1-9.615,0,5.2,5.2,0,0,1-1.9-4.194A5.275,5.275,0,0,1,94.891,745.678Zm1.354,7.189a5.383,5.383,0,0,0,6.771,0,3.99,3.99,0,0,0,0-5.991,5.383,5.383,0,0,0-6.771,0,3.749,3.749,0,0,0-1.354,3A4.221,4.221,0,0,0,96.245,752.867Z" transform="translate(-73.9 -731.3)" fill="#18a063"/>
+                          </svg> Bicycle</div>
+                          <div class="car-icon btn" id="car">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24.892" height="23.037" viewBox="0 0 24.892 23.037">
+                            <path id="path-car" d="M172.888,736.24l2.9,8.639V756.4a1.333,1.333,0,0,1-.415,1.008,1.232,1.232,0,0,1-.968.432h-1.383a1.232,1.232,0,0,1-.968-.432,1.333,1.333,0,0,1-.415-1.008v-1.44H155.049v1.44a1.333,1.333,0,0,1-.415,1.008,1.233,1.233,0,0,1-.968.432h-1.383a1.233,1.233,0,0,1-.968-.432,1.333,1.333,0,0,1-.415-1.008V744.879l2.9-8.639a1.876,1.876,0,0,1,2.074-1.44H171.09A1.923,1.923,0,0,1,172.888,736.24Zm-19.222,7.2h19.36l-2.074-6.479H155.74Zm.553,6.623a1.848,1.848,0,0,0,1.521.576,2.266,2.266,0,0,0,1.521-3.743,1.848,1.848,0,0,0-1.521-.576,2.266,2.266,0,0,0-1.521,3.744Zm15.212,0a1.848,1.848,0,0,0,1.521.576,2.266,2.266,0,0,0,1.521-3.743,1.848,1.848,0,0,0-1.521-.576,2.266,2.266,0,0,0-1.521,3.744Z" transform="translate(-150.9 -734.8)" fill="#21b370"/>
+                          </svg> Car</div>
+                          <div class="van-icon btn" id="van">
+                            <svg id="Group_11140" data-name="Group 11140" xmlns="http://www.w3.org/2000/svg" width="52.741" height="33.096" viewBox="0 0 52.741 33.096">
+                              <rect id="Rectangle_3689" data-name="Rectangle 3689" width="33" height="16" transform="translate(1 0.889)" fill="#21b370"/>
+                              <g id="Path_10628" data-name="Path 10628" transform="translate(0 18.889)" fill="#21b370">
+                                <path id="path_1703" d="M 10.6063117980957 4.499818325042725 L 4.115967273712158 4.499818325042725 L 1.013921499252319 3.954828262329102 L 0.5685938596725464 0.4999984502792358 L 11.46033573150635 0.4999984502792358 L 10.6063117980957 4.499818325042725 Z" stroke="none"/>
+                                <path d="M 1.137172698974609 0.9999983310699463 L 1.462778091430664 3.526026248931885 L 4.159570217132568 3.999818325042725 L 10.20179557800293 3.999818325042725 L 10.84230422973633 0.9999983310699463 L 1.137172698974609 0.9999983310699463 M 4.76837158203125e-06 -1.430511474609375e-06 L 12.07836437225342 -1.430511474609375e-06 L 11.01082420349121 4.999818325042725 L 4.072364807128906 4.999818325042725 L 0.5650548934936523 4.383628368377686 L 4.76837158203125e-06 -1.430511474609375e-06 Z" stroke="none" fill="#21b370"/>
+                              </g>
+                              <path id="Path_10629" data-name="Path 10629" d="M16.04.111h9.515L28.7,11.373l5.037,2.445L33.643,24h-4.45l-1.26-3.588-1.959-1.7H22.407l-2.139.778-1.283,1.754L18.559,24H1.137l-.96-3.812,15.863-.147Z" transform="translate(19 -0.111)" fill="#21b370"/>
+                              <g id="Path_10630" data-name="Path 10630" transform="translate(9 21.096)" fill="none">
+                                <path d="M6,0A6,6,0,1,1,0,6,6,6,0,0,1,6,0Z" stroke="none"/>
+                                <path d="M 6 2 C 3.794389724731445 2 2 3.794389724731445 2 6 C 2 8.205610275268555 3.794389724731445 10 6 10 C 8.205610275268555 10 10 8.205610275268555 10 6 C 10 3.794389724731445 8.205610275268555 2 6 2 M 6 0 C 9.31371021270752 0 12 2.68628978729248 12 6 C 12 9.31371021270752 9.31371021270752 12 6 12 C 2.68628978729248 12 0 9.31371021270752 0 6 C 0 2.68628978729248 2.68628978729248 0 6 0 Z" stroke="none" fill="#21b370"/>
+                              </g>
+                              <g id="Path_10631" data-name="Path 10631" transform="translate(37 21.096)" fill="none">
+                                <path d="M6,0A6,6,0,1,1,0,6,6,6,0,0,1,6,0Z" stroke="none"/>
+                                <path d="M 6 2 C 3.794389724731445 2 2 3.794389724731445 2 6 C 2 8.205610275268555 3.794389724731445 10 6 10 C 8.205610275268555 10 10 8.205610275268555 10 6 C 10 3.794389724731445 8.205610275268555 2 6 2 M 6 0 C 9.31371021270752 0 12 2.68628978729248 12 6 C 12 9.31371021270752 9.31371021270752 12 6 12 C 2.68628978729248 12 0 9.31371021270752 0 6 C 0 2.68628978729248 2.68628978729248 0 6 0 Z" stroke="none" fill="#21b370"/>
+                              </g>
+                            </svg>
+                           Van</div>
+                      </div> 
+                  </div>
+                  <div class="vl"></div>
+                  <div class="booking-section">
+                      <button id="book-btn-widget" class="book-button" type="button">Book Now</button>
+                  </div>
+              </form> 
+          </div>
+            <div class="buttons-under-widget">
+              <a href="#" class="green-btn">Download App</a>
+              <a href="#" class="white-btn">Watch Video</a>
+            </div>
+          </div>
+        </div>
+        <div class="top-bg">
+          <img src="./images/dest/top-bg.png" />
+        </div>
+      </section>
+      <section id="how-works" class="small-container container">
+        <div class="phone-image">
+          <img src="./images/dest/phone-img.png" />
+        </div>
+        <div class="video-info">
+          <h2>
+            The days of spending hours waiting to deliver and collect items are
+            finally over.
+          </h2>
+          <p>
+            Do you want your items to be delivered within a few minutes?
+            Download AnyRuns today to find out how we can safely deliver and
+            collect your items.
+          </p>
+          <a href="#" class="video1-callback">
+            <img src="./images/dest/video1-img.png" />
+          </a>
+          <!-- <div class="video-wrp">
+            <video
+              id="player"
+              playsinline
+              controls
+              data-poster="./images/dest/video-cover1.jpg"
+            >
+              <source src="./video/any.mp4" type="video/mp4" />
+            </video>
+          </div> -->
+          <p class="title">Available on</p>
+          <a href="#" class="gplay">
+            <img src="./images/dest/gplay.jpg" alt="" />
+          </a>
+        </div>
+      </section>
+      <section id="features">
+        <div class="container">
+          <h3>App Features</h3>
+          <p class="article">
+            With its simple design and easy-to-use features, find out how the
+            AnyRuns app could help you deliver and collect items with ease.
+          </p>
+          <div class="features-inner">
+            <div class="feature">
+              <img src="./images/dest/icon1.png" />
+              <p class="title">Simple Design</p>
+              <p>
+                User-friendly interface with a clear map display, easy-to-read
+                text and only the information you really need to have.
+              </p>
+            </div>
+            <div class="feature">
+              <img src="./images/dest/icon2.png" />
+              <p class="title">Real-Time Updates</p>
+              <p>
+                Track the precise location of your item whilst it’s en route
+                from Point A to B.
+              </p>
+            </div>
+            <div class="feature">
+              <img src="./images/dest/icon3.png" />
+              <p class="title">Instant Delivery</p>
+              <p>
+                Get your parcels or items delivered hassle free within minutes
+                by your local courier.
+              </p>
+            </div>
+            <div class="feature">
+              <img src="./images/dest/icon4.png" />
+              <p class="title">Safe & Secure</p>
+              <p>
+                When you make an account on the AnyRuns app, no-one but us can
+                access your personal details
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="why">
+        <div class="small-container">
+          <div class="why-info">
+            <h2>Why Choose AnyRuns ?</h2>
+            <div class="why-inner">
+              <div class="why-item">
+                <img src="./images/dest/icon4.png" />
+                <div class="item-info">
+                  <p class="green">Reliable</p>
+                  <p>
+                    With AnyRuns, have reassurance knowing that your item will
+                    safely reach its destination at the specified time.
+                  </p>
+                  <p></p>
+                </div>
+              </div>
+              <div class="why-item">
+                <img src="./images/dest/icon3.png" />
+                <div class="item-info">
+                  <p class="green">Service with a Smile</p>
+                  <p>
+                    Our partners of friendly cyclists and drivers are happy to
+                    help. AnyRuns partners only with the very best couriers to
+                    deliver and collect your items.
+                  </p>
+                  <p></p>
+                </div>
+              </div>
+              <div class="why-item">
+                <img src="./images/dest/icon5.png" />
+                <div class="item-info">
+                  <p class="green">Willing to Listen</p>
+                  <p>
+                    Let us know your thoughts, so that we can continue providing
+                    the very best local delivery and collection service around!
+                  </p>
+                  <p></p>
+                </div>
+              </div>
+              <div class="why-item">
+                <img src="./images/dest/icon6.png" />
+                <div class="item-info">
+                  <p class="green">Low-Cost</p>
+                  <p>
+                    AnyRuns offers you the affordable delivery and collection
+                    service, so you don’t have to worry about paying a huge sum.
+                  </p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="why-image">
+            <img src="./images/dest/phone-img2.png" />
+          </div>
+        </div>
+      </section>
+      <section id="screenshot">
+        <div class="small-container">
+          <h2>App Screenshots</h2>
+          <p>
+            Intrigued to see what the AnyRuns app is like? Check out the
+            screenshots below!
+          </p>
+          <div class="screenshot-item-wrp">
+            <div class="screenshot-item">
+              <img src="./images/dest/screen01.png" />
+            </div>
+            <div class="screenshot-item">
+              <img src="./images/dest/screen02.png" />
+            </div>
+            <div class="screenshot-item">
+              <img src="./images/dest/screen03.png" />
+            </div>
+            <div class="screenshot-item">
+              <img src="./images/dest/screen04.png" />
+            </div>
+            <div class="screenshot-item">
+              <img src="./images/dest/screen03.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="big-video">
+        <div class="container">
+          <a class="video2-callback" href="#"
+            ><img src="./images/dest/big-video.jpg"
+          /></a>
+        </div>
+      </section>
+      <section id="faq">
+        <div class="small-container">
+          <h3>Frequently Asked Questions</h3>
+          <p>Have any questions about the AnyRuns app?</p>
+          <p>See below to find out if we have already answered it.</p>
+
+          <div class="nAccordian">
+            <div class="question">How can I install the app ?</div>
+            <div class="answer">
+              You can install AnyRuns via Google Play or the Apple Store. All
+              you need to do is type “AnyRuns” into the search bar, find the app
+              and install it (for free!).
+            </div>
+            <div class="question">Where are the settings options?</div>
+            <div class="answer">
+              Launch the app and press on your Profile (bottom right-hand side).
+              Once this has loaded, you will find the Settings option, which
+              will allow you to make changes to your profile.
+            </div>
+            <div class="question">How can I manage the settings?</div>
+            <div class="answer">
+              See above. Once you have found the Settings option, you will be
+              able to change details including your profile name, icon photo and
+              address. You can also reset your password here.
+            </div>
+            <div class="question">Is there any authentication system?</div>
+            <div class="answer">
+              We will ask you to make an AnyRuns account using a valid email
+              address and password. Your account will be protected, with any
+              suspicious activity resulting in it being locked – if this
+              happens, we will send you a password reset email.
+            </div>
+            <div class="question">How can I start receiving notifications?</div>
+            <div class="answer">
+              To receive AnyRuns notifications on your device, you must
+              authorise it via the app’s Settings. All you need to do is press
+              ‘Approve Notifications’ to receive updates about your
+              delivery/collection, as well as any special offers.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials">
+        <div class="small-container">
+          <h3>Testimonials</h3>
+          <p class="h3add">
+            Here is what our existing customers say about AnyRuns:
+          </p>
+          <div class="people-wrp">
+            <div class="people-item">
+              <img src="./images/dest/testimonial01.png" />
+              <p class="name">Emma Watson</p>
+              <p class="position">Designer</p>
+              <p class="info">
+                I use AnyRuns whenever I need to deliver an item, no matter how
+                big or small. The delivery person is always super friendly and
+                reliable – it makes all the difference!
+              </p>
+            </div>
+            <div class="people-item">
+              <img src="./images/dest/testimonial01.png" />
+              <p class="name">Amy Richardson</p>
+              <p class="position">Front End Developer</p>
+              <p class="info">
+                AnyRuns makes my life so much easier. As I don’t work from home,
+                items that need a signature are usually rescheduled, but with
+                AnyRuns I can collect anything at a time that suits me.
+              </p>
+            </div>
+
+            <div class="people-item">
+              <img src="./images/dest/testimonial01.png" />
+              <p class="name">Nicholas Davies</p>
+              <p class="position">Business Owner</p>
+              <p class="info">
+                AnyRuns is perfect for my business. If a delivery ever arrives
+                outside of trading hours, I can just get AnyRuns to deliver it
+                to my house. I then know my item is safe with me, rather than
+                staying outside of my shop for anyone to take.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="play-store">
+        <div class="small-container">
+          <div class="store-info">
+            <p class="title">Available for your smartphone</p>
+            <p>AnyRuns app is available to download from Google Play Store.</p>
+            <a href="#" class="gplay">
+              <img src="./images/dest/gplay.jpg" alt="" />
+            </a>
+          </div>
+          <div class="store-img">
+            <img src="./images/dest/smartphone-bg.jpg" />
+          </div>
+        </div>
+      </section>
+      <section id="updates">
+        <div class="container">
+          <h3>Get the latest Updates</h3>
+          <p class="h3add">We’ll send you updates obout our special offers</p>
+          <div class="form-email-wrp">
+            <div id="#thank-you" class="thank-you hidden">
+              <img src="./images/dest/thanks.svg" />
+              <p>Thank you!</p>
+            </div>
+            <form method="POST" name="first-form" class="email">
+              <input
+                type="email"
+                name="email"
+                id=""
+                placeholder="Your email address"
+              />
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="contact-us">
+        <div class="small-container">
+          <h2>Contact Us</h2>
+          <p class="h2add">
+            Have a question to ask that isn’t mentioned in the FAQs?
+          </p>
+          <p class="h2add">
+            Contact a member of the friendly AnyRuns team today:
+          </p>
+          <div class="contact-icons">
+            <a
+              href="mailto:contact@anyruns.com"
+              target="_blank"
+              class="contact-item"
+            >
+              <div class="contact-img-wrp">
+                <img
+                  src="./images/dest/contact-item01.svg"
+                  class="icon-filter"
+                />
+              </div>
+              <p>contact@anyruns.com</p>
+            </a>
+            <!-- <a href="tel:+4407311442536" class="contact-item" target="_blank">
+              <div class="contact-img-wrp">
+                <img
+                  src="./images/dest/contact-item02.svg"
+                  class="icon-filter"
+                />
+              </div>
+              <p>+44 07311442536</p>
+            </a> -->
+            <a
+              href="https://goo.gl/maps/WnFjCUgfwdw843ki7"
+              class="contact-item"
+              target="_blank"
+            >
+              <div class="contact-img-wrp">
+                <img
+                  src="./images/dest/contact-item03.svg"
+                  class="icon-filter"
+                />
+              </div>
+              <p>71-75 Shelton Street, London, WC2H 9JQ</p>
+            </a>
+            <!-- <a href="#" class="contact-item" target="_blank">
+              <div class="contact-img-wrp">
+                <img
+                  src="./images/dest/contact-item04.svg"
+                  class="icon-filter"
+                />
+              </div>
+              <p>
+                Live Support <br />
+                24/7
+              </p>
+            </a> -->
+          </div>
+        </div>
+      </section>
+      <section id="form-map">
+        <div class="container">
+          <div class="form">
+            <h2>Send Us A Message</h2>
+            <div id="#thank-you" class="thank-you hidden">
+              <img src="./images/dest/thanks.svg" />
+              <p>Thank you!</p>
+            </div>
+            <form method="POST" name="second-form">
+              <input type="text" name="fname" placeholder="Name" />
+              <input type="email" name="email" placeholder="Email" />
+              <input type="text" name="subject" placeholder="Subject" />
+              <textarea
+                name="message"
+                placeholder="Write Your Messages"
+              ></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="map">
+            <h2>Find Us In Google Map</h2>
+            <div id="map"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="small-container">
+        <div class="anyruns">
+          <a class="logo" href="#"
+            ><img src="./images/dest/logo.png" alt="logo"
+          /></a>
+          <p>
+            AnyRuns was created in 2020, with a vision to provide top-quality
+            instant local delivery and collection services.
+          </p>
+        </div>
+        <div class="explore explore-home">
+          <p class="explore">Explore</p>
+          <a href="#header">Home</a>
+          <a href="#how-works">How it works?</a>
+          <a href="#contact-us">Help</a>
+        </div>
+        <div class="get-connected">
+          <p class="gconnect">Get Connected</p>
+          <div class="icons">
+            <a
+              href="https://www.instagram.com/anyruns_uk/"
+              target="_blank"
+              class="soc-icon"
+              ><img src="./images/dest/Icon awesome-instagram.svg" alt=""
+            /></a>
+
+            <a
+              href="https://www.facebook.com/AnyRuns-108497024306219"
+              target="_blank"
+              class="soc-icon"
+              ><img src="./images/dest/Icon awesome-facebook-square.svg" alt=""
+            /></a>
+            <a
+              href="https://twitter.com/AnyRuns_UK"
+              target="_blank"
+              class="soc-icon"
+              ><img src="./images/dest/Icon awesome-twitter-square.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="small-container bottom">
+        <div class="uk">
+          <img src="./images/dest/uk.jpg" />
+          <p>United Kingdom</p>
+        </div>
+        <a href="/privacy-policy" class="green">Privacy Policy</a>
+        <p>Any Runs Limited © All Rights Reserved.</p>
+      </div>
+    </footer>
+    
+    <script src="./js/app.min.js"></script>
+
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA10L4AArCPR7oS9T1ycTJT9lrd1FVs56A&callback=initMap"
+      type="text/javascript"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

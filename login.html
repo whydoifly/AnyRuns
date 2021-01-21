@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/app.min.css" />
+        <link rel="stylesheet" href="styles.css">
+        <title>
+          AnyRuns - Your local on demand delivery service. Get 10% off when
+          delivering items locally.
+        </title>
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="./fav/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="./fav/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="./fav/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./fav/site.webmanifest" />
+        <link rel="mask-icon" href="./fav/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
+      </head>
+<body>
+    <header class="container" id="header">
+        <a href="./" class="logo"
+          ><img src="./images/dest/logo.png" alt="logo"
+        /></a>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#how-works" class="internal-a">How it Works</a></li>
+          <li><a href="/couriers">Couriers</a></li>
+          <li><a href="#faq" class="internal-a">FAQ</a></li>
+          <li><a href="#contact-us" class="internal-a">Contact Us</a></li>
+          <li><a href="register.html" class="button mobile-register" id="register">Register</a></li>
+          <li><a href="login.html" class="button mobile-login" id="login">Login</a></li>
+        </ul>
+        <div class="account-buttons">
+          <a href="register.html" class="button" id="register">Register</a>
+          <a href="login.html" class="button" id="login">Login</a>
+        </div>
+        <!-- <a href="#" class="login">Login</a> -->
+        <div class="menu-btn">
+          <div class="menu-btn__burger"></div>
+        </div>
+      </header>
+      
+    <!-- Login Form -->
+    <div class="login-form-container">
+        <form action="" method="POST" class="login-form">
+            <a href="index.html" class="back-btn button">Back</a>
+
+            <h4 class="login-register-heading">Login to your<br> AnyRuns Account</h4>
+            <label for="email">Email Address</label><br>
+            <input type="email" placeholder="Enter Email Address"><br>
+            <label for="login-password">Password</label><br>
+            <input type="password" placeholder="Enter Password"><br>
+            <button type="submit" class="login-button">Login</button><br>
+            <p class="forgot-password forgot-password-login" id="reset-password-btn">Forgot password?</p>
+        </form>   
+    </div>
+
+    <!-- Modal Section -->
+    <div class="bg-modal">
+      <div class="modal-content">
+        <div class="close-modal">+</div>
+        <div class="progress-bar">
+          <div class="quote-progress">
+            <div class="progress-active-modal progress-1-modal">1</div>
+          </div>
+          <div class="hl-modal"></div>
+          <div class="quote-progress">
+            <div class="progress-2-modal">2</div>
+          </div>
+        </div>
+        <div class="progress-names-modal">
+          <div class="progress-name progress-name-active"><bold>Email Address</bold></div>
+          <div class="progress-name progress-password-modal">Password<br> reset</div>
+        </div>
+        <p class="to-reset-password">To reset your passowrd, please enter your<br>
+          email address you use to sign in.
+        </p>
+        <form>
+          <label for="email-address-reset" class="email-reset">Email Address</label><br>
+          <input type="email" placeholder="Please enter email address" class="email-address-reset" required><br>
+          <a href="#" type="button" class="confirm-reset-password-btn" id="confirm-reset-password">Confirm</a>
+        </form>
+      </div>
+    </div>
+    <!-- Thank you for password reset -->
+    <div class="bg-thanks" id="thanks-background">
+      <div class="password-reset-notification">
+        <p>In order to change the password we have sent the link to your email. Thank you!</p>
+      </div>
+    </div>
+    <footer>
+        <div class="small-container">
+          <div class="anyruns">
+            <a class="logo" href="#"
+              ><img src="./images/dest/logo.png" alt="logo"
+            /></a>
+            <p>
+              AnyRuns was created in 2020, with a vision to provide top-quality
+              instant local delivery and collection services.
+            </p>
+          </div>
+          <div class="explore explore-home">
+            <p class="explore">Explore</p>
+            <a href="#header">Home</a>
+            <a href="#how-works">How it works?</a>
+            <a href="#contact-us">Help</a>
+          </div>
+          <div class="get-connected">
+            <p class="gconnect">Get Connected</p>
+            <div class="icons">
+              <a
+                href="https://www.instagram.com/anyruns_uk/"
+                target="_blank"
+                class="soc-icon"
+                ><img src="./images/dest/Icon awesome-instagram.svg" alt=""
+              /></a>
+  
+              <a
+                href="https://www.facebook.com/AnyRuns-108497024306219"
+                target="_blank"
+                class="soc-icon"
+                ><img src="./images/dest/Icon awesome-facebook-square.svg" alt=""
+              /></a>
+              <a
+                href="https://twitter.com/AnyRuns_UK"
+                target="_blank"
+                class="soc-icon"
+                ><img src="./images/dest/Icon awesome-twitter-square.svg" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="small-container bottom">
+          <div class="uk">
+            <img src="./images/dest/uk.jpg" />
+            <p>United Kingdom</p>
+          </div>
+          <a href="/privacy-policy" class="green">Privacy Policy</a>
+          <p>Any Runs Limited © All Rights Reserved.</p>
+        </div>
+      </footer>
+      <script>
+        function closeThanks() {
+          document.querySelector(".bg-thanks").style.display = "none";
+        }
+
+        document.getElementById("reset-password-btn").addEventListener("click", function() {
+          document.querySelector(".bg-modal").style.display = "flex";
+        });
+
+        document.querySelector(".close-modal").addEventListener("click", function() {
+          document.querySelector(".bg-modal").style.display = "none";
+        });
+
+        document.getElementById("confirm-reset-password").addEventListener("click", function() {
+          document.querySelector(".bg-thanks").style.display = "flex";
+          setTimeout(closeThanks, 4000);
+        });
+
+        
+      </script>
+      <script src="script.js"></script>
+      <script src="./js/app.min.js"></script>
+  
+      <script
+        async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA10L4AArCPR7oS9T1ycTJT9lrd1FVs56A&callback=initMap"
+        type="text/javascript"
+      ></script>
+</body>
+</html>

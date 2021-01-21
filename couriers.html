@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/app.min.css" />
+    <title>
+      Couriers | AnyRuns - Your local on demand delivery service. Get 10% off
+      when delivering items locally.
+    </title>
+  </head>
+  <body class="single-page">
+    <header class="container" id="header">
+      <a href="./" class="logo"
+        ><img src="./images/dest/logo.png" alt="logo"
+      /></a>
+      <ul class="menu">
+        <li><a href="./">Home</a></li>
+        <li><a href="./#how-works">How it Works</a></li>
+        <li><a href="#" class="active">Couriers</a></li>
+        <li><a href="./#faq">FAQ</a></li>
+        <li><a href="./#contact-us">Contact Us</a></li>
+      </ul>
+      <!-- <a href="#" class="login">Login</a> -->
+      <div class="menu-btn">
+        <div class="menu-btn__burger"></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="head-txt">
+        <p class="heading">Register your interest</p>
+        <p>
+          By registering your interest, you will be cruising towards making
+          extra money.
+        </p>
+        <p>
+          It’s flexible opportunity that you can customize to fit your
+          lifestyle.
+        </p>
+      </div>
+      <div class="container main-wrp">
+        <div class="single-content">
+          <div id="#thank-you" class="thank-you hidden">
+            <img src="./images/dest/thanks.svg" />
+            <p>Thank you!</p>
+          </div>
+          <form method="POST" name="third-form">
+            <input type="text" name="fname" placeholder="First name" />
+            <input type="text" name="lname" placeholder="Last name" />
+            <input type="email" name="email" placeholder="Email Adress" />
+            <input type="tel" name="tel" placeholder="Phone Number" />
+            <input type="text" name="city" placeholder="City" />
+          
+
+            <button type="submit">Confirm</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="small-container">
+        <div class="anyruns">
+          <a class="logo" href="#"
+            ><img src="./images/dest/logo.png" alt="logo"
+          /></a>
+          <p>
+            AnyRuns was created in 2020, with a vision to provide top-quality
+            instant local delivery and collection services.
+          </p>
+        </div>
+        <div class="explore">
+          <p class="explore">Explore</p>
+          <a href="./">Home</a>
+          <a href="./#how-works">How it works?</a>
+          <a href="./#contact-us">Help</a>
+        </div>
+        <div class="get-connected">
+          <p class="gconnect">Get Connected</p>
+          <div class="icons">
+            <a href="https://www.instagram.com/anyruns_uk/" class="soc-icon"
+              ><img src="./images/dest/Icon awesome-instagram.svg" alt=""
+            /></a>
+            <a
+              href="https://www.facebook.com/AnyRuns-108497024306219"
+              class="soc-icon"
+              ><img src="./images/dest/Icon awesome-facebook-square.svg" alt=""
+            /></a>
+            <a href="https://twitter.com/AnyRuns_uk" class="soc-icon"
+              ><img src="./images/dest/Icon awesome-twitter-square.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="small-container bottom">
+        <div class="uk">
+          <img src="./images/dest/uk.jpg" />
+          <p>United Kingdom</p>
+        </div>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <p>Any Runs Limited © All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="/js/app.min.js"></script>
+    <script>
+      const scriptURLThird =
+        "https://script.google.com/macros/s/AKfycbxWXoVoQyWAOGTR7EZ0__jrSGgrd5nlwLi6iQcjBpu12yErsSo/exec";
+      const formThird = document.forms["third-form"];
+
+      formThird.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // alert("norm");
+        fetch(scriptURLThird, { method: "POST", body: new FormData(formThird) })
+          .then(
+            (response) =>
+              // alert("Thanks for Contacting us..! We Will Contact You Soon...")
+              $(".single-content").find(".thank-you").removeClass("hidden"),
+            $(".single-content").find("h2, form").addClass("hidden")
+          )
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
